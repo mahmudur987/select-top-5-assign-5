@@ -10,15 +10,23 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+        .card {
+            background-color: black;
+            color: aliceblue;
+            border: 2px solid white;
+        }
+    </style>
+
 
 </head>
 
-<body>
+<body class="bg-black text-white mx-auto">
 
     <header>
 
-        <section class=" bg-black text-lime-50 w-9/12 mx-auto  mt-8 h-auto ">
-            <div class="flex justify-between ">
+        <section class="  mx-auto mt-12  min-h-full pt-6 ">
+            <div class="flex justify-between mt-12 pt-8   ">
 
                 <div class="basis-1/4 ">
                     <img class="h-full" src="images/left-main-player-removebg-preview.png" alt="">
@@ -37,16 +45,16 @@
                 </div>
 
             </div>
-        </section> -->
+        </section>
     </header>
 
 
     <main>
 
-        <section class=" mt-12 w-9/12 mx-auto ">
+        <section class="  w-9/12 mx-auto mt-12 ">
             <div class="big-div flex ">
 
-                <div id="player-place" class="grid grid-cols-1 lg:grid-cols-3 m-1  basis-3/4 gap-2">
+                <div id="player-place" class="grid grid-cols-1 lg:grid-cols-3 m-1  basis-3/4 gap-4">
 
                     <div class="card   bg-base-100 shadow-xl my-5">
                         <figure><img src="images/player 1.jpg" alt="Shoes" /></figure>
@@ -151,15 +159,14 @@
 
                     <div class="grid grid-cols-1">
 
-                        <div class="border border-black min-w-full h-96 grid justify-center rounded-lg">
+                        <div class="border border-white min-w-full h-96 grid justify-center rounded-lg">
 
                             <h1 class="text-2xl font-semibold underline">Selecct-Five</h1>
                             <ul id="player-list">
 
                             </ul>
                         </div>
-                        <div class="bg-blue-200 min-w-full min-h-full border border-slate-900 rounded-lg mt-6"
-                            id="budget">
+                        <div class=" min-w-full min-h-full border border-white rounded-lg mt-6" id="budget">
                             <div class="grid justify-center  mb-8">
                                 <div class="mt-4">
                                     <h1 class="font-bold mx-1 inline">Per player :</h1>
@@ -171,16 +178,16 @@
 
 
                             <h1 class="flex m-3 font-bold">Player expence: <span id="players-expence">00</span> </h1>
-                            <h1 class="flex m-3 font-bold">Manager : <input id="Manegar-cost" type="text"
-                                    class=" w-24 mx-3">
+                            <h1 class="flex m-3 font-bold ">Manager : <input id="Manegar-cost" type="text"
+                                    class=" w-24 mx-3 text-black">
                             </h1>
-                            <h1 class="flex m-3 font-bold"> Coach : <input id="coach-cost" type="text"
-                                    class=" w-24 ml-8">
+                            <h1 class="flex m-3 font-bold "> Coach : <input id="coach-cost" type="text"
+                                    class=" w-24 ml-8 text-black">
                             </h1>
                             <button class="block  bg-green-700 p-1 w-9/12 ml-6 my-1 font-bold mt-10 text-center"
                                 id="btn-calculate-total">
                                 CalculateTotal</button>
-                            <h1 class="flex m-3 font-bold"> Total: <span id="total-cost" class=" w-36 ml-8">00</span>
+                            <h1 class="flex m-3 font-bold"> Total : <span id="total-cost" class=" w-36 ml-8">00</span>
                             </h1>
 
                         </div>
@@ -191,11 +198,11 @@
             </div>
         </section>
     </main>
-    <footer class="bg-black mt-6 h-36 w-9/12 mx-auto">
+    <footer class="bg-black mt-6 h-36  mx-auto">
 
         <hr>
         <div class=" m-16 text-white ">
-            <hr>
+
             <h1 class="font-bold text-center ">coppyright &copy; 2022 all Right Reserved</h1>
         </div>
 

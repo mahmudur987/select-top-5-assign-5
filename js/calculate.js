@@ -28,7 +28,10 @@ function setElementValue(elementId, value) {
 document.getElementById('calculate').addEventListener('click', function () {
 
     const palyerListFieldAmount = document.getElementById('player-list').childElementCount;
-    const perPlayerCost = getInputValueById('per-player-cost')
+    const perPlayerCost = getInputValueById('per-player-cost');
+    if (isNaN(perPlayerCost)) {
+        alert('input a number')
+    }
     const playersExpence = palyerListFieldAmount * perPlayerCost;
     const setPlayersExpence = setElementValue('players-expence', playersExpence);
     // console.log(playersExpence);
@@ -40,7 +43,13 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
 
     const playersExpence = getelementsValueById('players-expence');
     const manegerExpence = getInputValueById('Manegar-cost');
+    if (isNaN(manegerExpence)) {
+        alert('input a number')
+    };
     const coachExpence = getInputValueById('coach-cost');
+    if (isNaN(coachExpence)) {
+        alert('input a number')
+    };
 
     const TotalExpence = playersExpence + manegerExpence + coachExpence;
 

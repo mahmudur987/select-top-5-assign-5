@@ -11,7 +11,7 @@ function updateSelectedPlayers(player) {
 
     const palyerList = document.getElementById('player-list');
     if (palyerList.childElementCount > 4) {
-        alert('max-5');
+        alert('You can add maximum 5 player');
         return;
     }
     const li = document.createElement('li');
