@@ -5,9 +5,15 @@ function getelementValueById(elementId) {
     return elementValu;
 
 }
+
+
 function updateSelectedPlayers(player) {
 
     const palyerList = document.getElementById('player-list');
+    if (palyerList.childElementCount > 4) {
+        alert('max-5');
+        return;
+    }
     const li = document.createElement('li');
     li.innerText = player;
     palyerList.appendChild(li);
